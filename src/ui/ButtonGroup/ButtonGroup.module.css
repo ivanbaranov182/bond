@@ -1,0 +1,16 @@
+.groupButton {
+  margin-left: -1px;
+}
+
+.groupButton:first-child {
+  margin-left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.groupButton:last-child {
+  border-radius: 0 3px 3px 0;
+}
+
+.activeButton {
+  background: #d9d9d9;
+}

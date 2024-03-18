@@ -1,0 +1,18 @@
+.bondCardMeta {
+  padding: 10px;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.info {
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
