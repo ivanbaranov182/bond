@@ -1,6 +1,6 @@
 {
   "name": "vite-template-redux",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -12,7 +12,8 @@
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "serve": "vite preview"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
@@ -41,5 +42,8 @@
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
     "vitest": "^1.2.0"
+  },
+  "glitch": {
+    "projectType": "generated_static"
   }
 }
