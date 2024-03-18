@@ -4,10 +4,11 @@ import path from "path"
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  // esbuild: {
+  //   target: 'esnext',
+  //   platform: 'linux',
+  // },
   plugins: [react()],
-  server: {
-    open: true,
-  },
   test: {
     globals: true,
     environment: "jsdom",
@@ -21,5 +22,16 @@ export default defineConfig({
         replacement: path.resolve(__dirname, "src"),
       },
     ],
+  },
+  build: {
+    outDir: "build",
+  },
+  server: {
+    host: "0.0.0.0",
+    port: 3000,
+    strictPort: true,
+    hmr: {
+      clientPort: 443, // Run the websocket server on the SSL port
+    },
   },
 })

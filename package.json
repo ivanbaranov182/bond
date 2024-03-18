@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=16.0.0"
   },
   "scripts": {
     "dev": "vite",
@@ -17,6 +17,9 @@
     "lint:fix": "eslint --fix .",
     "type-check": "tsc --noEmit",
     "serve": "vite preview"
+  },
+  "resolutions": {
+    "rollup": "npm:@rollup/wasm-node"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
@@ -44,7 +47,8 @@
     "prettier": "^3.2.1",
     "typescript": "^5.3.3",
     "vite": "^5.0.11",
-    "vitest": "^1.2.0"
+    "vitest": "^1.2.0",
+    "@rollup/rollup-linux-x64-gnu": "4.6.1"
   },
   "glitch": {
     "projectType": "generated_static"
